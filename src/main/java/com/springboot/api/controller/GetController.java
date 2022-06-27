@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/get-api")
+@RequestMapping(value = "/api/v1/get-api")
 public class GetController {
 
     @ApiOperation(value = "GET 메소드 예제", notes = "@RequestParam을 활용한 GET Method")
