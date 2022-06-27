@@ -5,6 +5,7 @@ import com.springboot.api.data.dto.ProductDto;
 import com.springboot.api.data.dto.ProductResponseDto;
 import com.springboot.api.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ public class ProductController {
     private final ProductService productService;
 
     @Autowired
-    public ProductController(ProductService productService) {
+    public ProductController(@Qualifier(value = "productServiceImpl2") ProductService productService) {
         this.productService = productService;
     }
 
