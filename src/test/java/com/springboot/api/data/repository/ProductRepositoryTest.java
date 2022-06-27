@@ -18,7 +18,7 @@ class ProductRepositoryTest {
     @Autowired
     private ProductRepository productRepository;
 
-    @Test
+    //@Test
     void sortingAndPagingTest() {
         // given
         Product product1 = new Product();
@@ -55,5 +55,7 @@ class ProductRepositoryTest {
         System.out.println(productRepository.findByName("펜", Sort.by(Sort.Order.asc("price"))));
         System.out.println(productRepository.findByName("펜", Sort.by(Sort.Order.asc("price"), Sort.Order.desc("stock"))));
     }
+
+
 
 }
