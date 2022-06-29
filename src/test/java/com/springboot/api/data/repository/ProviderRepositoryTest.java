@@ -177,9 +177,11 @@ class ProviderRepositoryTest {
 
         productDetailRepository.save(productDetail);
 
+        System.out.println("쿼리 시작----------\r\n");
 
+        System.out.println(productRepository.findById(product.getNumber()).get());
 
-        System.out.println(productRepository.findById(product.getNumber()));
+        System.out.println("쿼리 끝----------\r\n");
     }
 
 }
