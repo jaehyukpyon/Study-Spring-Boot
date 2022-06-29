@@ -34,7 +34,7 @@ public class QueryDSLTest {
                                         .fetch();
     }
 
-    @Test
+    //@Test
     public void queryDSLTest4() {
         QProduct qProduct = QProduct.product;
 

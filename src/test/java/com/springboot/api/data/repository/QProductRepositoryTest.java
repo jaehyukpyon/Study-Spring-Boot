@@ -14,7 +14,7 @@ class QProductRepositoryTest {
     @Autowired
     private QProductRepository qProductRepository;
 
-    @Test
+    //@Test
     public void queryDSLTest1() {
         Predicate predicate = QProduct.product.name.containsIgnoreCase("펜")
                                         .and(QProduct.product.price.between(1000, 2500));
