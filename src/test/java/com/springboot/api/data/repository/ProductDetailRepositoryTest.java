@@ -17,7 +17,7 @@ class ProductDetailRepositoryTest {
     @Autowired
     private ProductRepository productRepository;
 
-    @Test
+    //@Test
     public void saveAndReadTest1() {
         Product product = new Product();
         product.setName("스프링 부트 JPA");

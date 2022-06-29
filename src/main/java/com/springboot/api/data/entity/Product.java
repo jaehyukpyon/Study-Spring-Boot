@@ -28,12 +28,12 @@ public class Product extends BaseEntity {
 
 
     @OneToOne(mappedBy = "product") // 이 필드는 데이터베이스 컬럼으로 생성 X
-    @ToString.Exclude
+    @ToString.Exclude // ProductDetail 입장에서 이 entity를 참조한다. ProductDetail(FK) Product(PK)
     private ProductDetail productDetail;
 
     @ManyToOne
     @JoinColumn(name = "provider_id") // foreign key references Provider (id)
-    @ToString.Exclude
+    @ToString.Exclude // 이 entity 입장에서는 Provider를 참조한다.
     private Provider provider;
 
 }
