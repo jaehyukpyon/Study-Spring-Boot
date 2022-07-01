@@ -49,6 +49,8 @@ dependencies {
 	implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
 	implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
 	implementation "com.querydsl:querydsl-core:${queryDslVersion}" // without this, occurs java.lang.NoSuchField Error: TREATED_PATH
+
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {

@@ -383,7 +383,7 @@ class ProviderRepositoryTest {
         product_detail productdet0_
     left outer join
         product product1_
-            on productdet0_.product_number=product1_.number
+            on productdet0_.product_number=product1_.number // ProductDetail 중에서, product_number(Product)의 값이 Product와 일치하는 거 찾기.
     left outer join
         provider provider2_
             on product1_.provider_id=provider2_.id
