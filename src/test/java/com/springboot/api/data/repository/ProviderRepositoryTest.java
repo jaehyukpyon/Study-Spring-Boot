@@ -117,11 +117,13 @@ class ProviderRepositoryTest {
         productRepository.save(product2);
         productRepository.save(product3);
 
-        List<Product> products = providerRepository.findById(provider.getId()).get().getProductList();
+        providerRepository.findById(provider.getId()).get();
 
-        for (Product product : products) {
-            System.out.println(product);
-        }
+        //List<Product> products = providerRepository.findById(provider.getId()).get().getProductList();
+
+//        for (Product product : products) {
+//            System.out.println(product);
+//        }
 
         /*
         * select
@@ -156,7 +158,7 @@ class ProviderRepositoryTest {
         * */
     }
 
-    @Test
+    //@Test
     public void myTest1() {
         Provider provider = new Provider();
         provider.setName("프로바이더1");
