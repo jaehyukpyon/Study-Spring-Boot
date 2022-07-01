@@ -19,7 +19,7 @@ class CategoryRepositoryTest {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    @Test
+    //@Test
     public void relationshipTest() {
         // 테스트 데이터 생성
         Product product = new Product();
